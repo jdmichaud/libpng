@@ -2,7 +2,7 @@
     .name = .libpng,
     .fingerprint = 0xb7a09eb4680df07e,
     .version = "1.6.48",
-    .minimum_zig_version = "0.14.0",
+    .minimum_zig_version = "0.14.1",
     .dependencies = .{
         // Upstream
         .libpng = .{

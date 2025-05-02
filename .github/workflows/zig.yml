@@ -20,5 +20,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: mlugg/setup-zig@v1
         with:
-          version: 0.14.0
+          # Because of https://github.com/ziglang/zig/issues/23120 we wan't use
+          # 0.14.0.
+          # Wait for 0.14.1 to be released.
+          version: master
       - run: zig build

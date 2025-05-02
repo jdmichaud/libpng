@@ -42,9 +42,6 @@ pub fn build(b: *std.Build) void {
             "powerpc/powerpc_init.c",
             "powerpc/filter_vsx_intrinsics.c",
         },
-        .flags = &.{
-            //TODO
-        },
     });
 
     const pnglibconf_h = generateConf(b, target);
